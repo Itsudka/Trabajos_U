@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Cafe Hogareño</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+  <body class="d-flex flex-column min-vh-100">
+    <!-- ----------------------Navbar -------------------------- -->
+     <section>
+        <nav class="navbar navbar-dark bg-dark fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"><em>Café Hogareño</em></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Elige tu opcion</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/pages/cata_coffe.html">Catalogo de cafe</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/pages/reservas.html">Reservas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/pages/contactanos.html">Contactanos</a>
+                    </li>
+                    </ul>
+                </div>
+                </div>
+            </div>
+        </nav>
+    </section>
+     <!-- ---------------------- Carrousel -------------------------- -->
+    <section id="carrouselDiv">
+        <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="10000">
+                <img src="assets/coffe-1.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div id="carrouselImageDiv" class="carousel-item" data-bs-interval="2000">
+                <img src="assets/coffe-2.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="assets/coffe-3.jpg" class="d-block w-100" alt="...">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+        </div>        
+    </section>
+    <!---------------------------Content----------------------------------------------------->
+
+    <div class="container mt-5 pt-5">
+        <div class="row align-items-center">
+
+        <!-- Columna izquierda: Imagen -->
+        <div class="col-md-6 mb-4">
+        <!-- <img src="/assets/home/cafe-beneficios.jpg" 
+            class="img-fluid rounded shadow"
+            alt="Taza de café"> -->
+            <div class="tenor-gif-embed" data-postid="7710784931443733740" data-share-method="host" data-aspect-ratio="0.803213" data-width="100%"><a href="https://tenor.com/view/coffee-coffee-cup-good-morning-navy-rebrnd-gif-7710784931443733740">Coffee Coffee Cup Sticker</a>from <a href="https://tenor.com/search/coffee-stickers">Coffee Stickers</a></div> <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
+        </div>
+
+    
+        <!-- Columna derecha: Beneficios -->
+        <div class="col-md-6">
+        <h2 class="fw-bold mb-3">Beneficios de tomar café</h2>
+        <p class="text-secondary">
+            El café no solo es delicioso, también aporta beneficios para tu bienestar diario.
+        </p>
+
+        <ul class="list-unstyled mt-4">
+            <li class="mb-3">
+            <strong>☕ Aumenta la energía:</strong> La cafeína mejora el estado de alerta y concentración.
+            </li>
+            <li class="mb-3">
+            <strong>🌿 Alto en antioxidantes:</strong> Ayuda a reducir el daño celular.
+            </li>
+            <li class="mb-3">
+            <strong>💭 Mejora el rendimiento:</strong> Favorece la memoria y la función cognitiva.
+            </li>
+            <li class="mb-3">
+            <strong>🔥 Puede acelerar el metabolismo:</strong> Ideal para empezar el día con energía.
+            </li>
+            <li class="mb-3">
+            <strong>😊 Genera bienestar:</strong> Un buen café siempre mejora el ánimo.
+            </li>
+        </ul>
+        </div>
+
+        </div>
+    </div>
+
+    <div class="container mt-5 pt-5">
+        <div class="row align-items-center">
+
+
+
+        
+            <!-- Columna derecha: Beneficios -->
+            <div class="col-md-6">
+                <h2 class="fw-bold mb-4">¿Por qué elegir <span class="text-cafe">Café Hogareño?</span></h2>
+                <p class="text-secondary mb-5">
+                Calidad, aroma y tradición en cada taza. Nuestro café y té están seleccionados para acompañar tus mejores momentos.
+                </p>
+
+                <ul class="list-unstyled mt-4">
+                    <li class="mb-3">
+                    <strong>Granos de alta calidad:</strong> Seleccionamos los mejores granos de origen colombiano para garantizar aroma y sabor excepcionales.
+                    </li>
+                    <li class="mb-3">
+                    <strong>Tostión artesanal:</strong> Cada lote es tostado de manera artesanal para resaltar las notas únicas de cada café..
+                    </li>
+                    <li class="mb-3">
+                    <strong>Experiencia hogareña:</strong> Nuestro café está pensado para regalarte momentos cálidos, tranquilos y llenos de sabor..
+                    </li>
+                    <li class="mb-3">
+                    <strong>Experiencia hogareña:</strong> Nuestro café está pensado para regalarte momentos cálidos, tranquilos y llenos de sabor..
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Columna izquierda: Imagen -->
+            <div class="col-md-6 mb-4">
+            <!-- <img src="/assets/home/cafe-beneficios.jpg" 
+                class="img-fluid rounded shadow"
+                alt="Taza de café"> -->
+                <div class="tenor-gif-embed" data-postid="19032946" data-share-method="host" data-aspect-ratio="1" data-width="100%"><a href="https://tenor.com/view/cappuccino-coffee-cappuccino-day-national-cappuccino-day-gif-19032946">Cappuccino Coffee GIF</a>from <a href="https://tenor.com/search/cappuccino-gifs">Cappuccino GIFs</a></div> <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
+            </div>
+
+        </div>
+    </div>
+    <!-- ---------------------- FOOTER -------------------------- -->
+    <footer class="bg-dark text-white text-center text-md-start py-4 mt-auto">
+        <div class="container">
+
+        <div class="row">
+
+            <div class="col-md-4 mb-3">
+            <h5 class="fw-bold">Creado por</h5>
+            <p class="mb-1">Juan David — Desarrollador Frontend</p>
+            <p class="text-secondary small">Proyecto prototipo — Café Hogareño</p>
+            </div>
+
+            <div class="col-md-4 mb-3">
+            <h5 class="fw-bold">Redes sociales</h5>
+            <ul class="list-unstyled">
+                <li><a href="#" class="text-white text-decoration-none">Facebook</a></li>
+                <li><a href="#" class="text-white text-decoration-none">Instagram</a></li>
+                <li><a href="#" class="text-white text-decoration-none">Twitter</a></li>
+                <li><a href="#" class="text-white text-decoration-none">TikTok</a></li>
+            </ul>
+            </div>
+
+            <div class="col-md-4 mb-3">
+            <h5 class="fw-bold">Otros enlaces</h5>
+            <ul class="list-unstyled">
+                <li><a href="#" class="text-white text-decoration-none">Acerca de nosotros</a></li>
+                <li><a href="#" class="text-white text-decoration-none">Preguntas frecuentes</a></li>
+                <li><a href="#" class="text-white text-decoration-none">Términos y condiciones</a></li>
+                <li><a href="#" class="text-white text-decoration-none">Política de privacidad</a></li>
+            </ul>
+            </div>
+
+        </div>
+
+        <hr class="border-light">
+
+        <!-- Copy final -->
+        <div class="text-center small">
+            © 2025 Café Hogareño — Todos los derechos reservados
+        </div>
+
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+  </body>
+</html>

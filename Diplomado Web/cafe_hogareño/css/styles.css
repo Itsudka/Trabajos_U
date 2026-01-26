@@ -1,0 +1,155 @@
+/* Carrousel images size */
+#carrouselDiv img {
+    height: 600px;
+    width: auto;        
+    object-fit: cover;
+    margin: auto;
+    display: block;
+  
+}
+/* Carrousel images size */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+}
+
+.main-content {
+    margin-top: 80px; 
+}
+
+/* Cards Container */
+.card{
+    height: 400px;
+}
+
+.catalog-img{
+  height: 400px;
+  object-fit: cover;
+}
+/* ====== Reservas ====== */
+
+.map-wrapper {
+  max-width: 900px;
+  margin: 0 auto;
+  background: #f8f3ee;        
+  border-radius: 1rem;
+  padding: 2rem 2.5rem;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+.tables-layout {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(8, 55px);
+  gap: 12px;
+  padding: 18px;
+  border-radius: 16px;
+  background: linear-gradient(180deg, #fbf6ef 0%, #f6efe6 100%);
+  justify-items: center;  
+  align-items: center;    
+}
+
+/* Zonas del local */
+.zone {
+  border: 2px dashed rgba(0,0,0,0.15);
+  border-radius: 14px;
+  font-size: 0.85rem;
+  color: rgba(0,0,0,0.55);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+}
+
+.zone-window  { grid-column: 1 / 7;  grid-row: 1 / 4; }
+.zone-center  { grid-column: 4 / 10; grid-row: 3 / 7; }
+.zone-bar     { grid-column: 8 / 13; grid-row: 1 / 3; }
+.zone-quiet   { grid-column: 1 / 5;  grid-row: 5 / 9; }
+
+/* Posiciones de mesas */
+.t1  { grid-column: 1 / 3;  grid-row: 1 / 3; }
+.t2  { grid-column: 3 / 5;  grid-row: 1 / 3; }
+.t3  { grid-column: 5 / 7;  grid-row: 1 / 3; }
+.t4  { grid-column: 2 / 4;  grid-row: 3 / 5; }
+
+.t5  { grid-column: 5 / 7;  grid-row: 3 / 5; }
+.t6  { grid-column: 7 / 9;  grid-row: 3 / 5; }
+.t7  { grid-column: 5 / 7;  grid-row: 5 / 7; }
+.t8  { grid-column: 7 / 9;  grid-row: 5 / 7; }
+
+.t9  { grid-column: 10 / 12; grid-row: 1 / 3; }
+.t10 { grid-column: 8 / 10;  grid-row: 1 / 3; }
+.t11 { grid-column: 10 / 12; grid-row: 3 / 5; }
+.t12 { grid-column: 9 / 11;  grid-row: 2 / 4; }
+
+.t13 { grid-column: 1 / 3;  grid-row: 6 / 8; }
+.t14 { grid-column: 3 / 5;  grid-row: 6 / 8; }
+.t15 { grid-column: 1 / 3;  grid-row: 4 / 6; }
+.t16 { grid-column: 3 / 5;  grid-row: 4 / 6; }
+
+
+/* Estilo base de cada mesa */
+.table-slot {
+  width: 60px;
+  height: 60px;
+  border-radius: 0.75rem;
+  border: 2px solid #444;
+  background-color: #fff;
+  font-weight: 600;
+  font-size: 0.9rem;
+  place-self: center;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+/* Hover general (solo disponibles) */
+.table-slot.available:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.12);
+}
+
+/* Estados */
+.table-slot.available {
+  background-color: #e6f4ea;       
+  border-color: #4caf50;
+}
+
+.table-slot.reserved {
+  background-color: #fbe3e4;      
+  border-color: #e53935;
+  color: #555;
+  cursor: not-allowed;
+  opacity: 0.8;
+}
+
+.table-slot.selected {
+  background-color: #ffe6c7;       
+  border-color: #ff9800;
+  transform: translateY(-3px);
+}
+
+/* Leyenda */
+.legend-box {
+  width: 18px;
+  height: 18px;
+  border-radius: 0.35rem;
+  display: inline-block;
+  border: 1px solid #444;
+}
+
+.legend-available {
+  background-color: #e6f4ea;
+}
+
+.legend-reserved {
+  background-color: #fbe3e4;
+}
+
+.legend-selected {
+  background-color: #ffe6c7;
+}

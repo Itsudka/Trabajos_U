@@ -1,0 +1,115 @@
+/* Carrousel images size */
+#carrouselDiv img {
+    height: 600px;
+    width: auto;          /* Mantiene proporción */
+    object-fit: cover;
+    margin: auto;
+    display: block;
+  
+}
+/* Carrousel images size */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+}
+
+.main-content {
+    margin-top: 80px; /* el mismo alto del navbar */
+}
+
+/* Cards Container */
+.card{
+    height: 400px;
+}
+
+
+/* ====== Reservas ====== */
+
+.map-wrapper {
+  max-width: 700px;
+  margin: 0 auto;
+  background: #f8f3ee;              /* tono café clarito */
+  border-radius: 1rem;
+  padding: 2rem 2.5rem;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+/* Grid de mesas */
+.tables-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 columnas */
+  gap: 1rem;
+  justify-items: center;
+}
+
+/* En pantallas pequeñas: 2 columnas */
+@media (max-width: 576px) {
+  .tables-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Estilo base de cada mesa */
+.table-slot {
+  width: 60px;
+  height: 60px;
+  border-radius: 0.75rem;
+  border: 2px solid #444;
+  background-color: #fff;
+  font-weight: 600;
+  font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+/* Hover general (solo disponibles) */
+.table-slot.available:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.12);
+}
+
+/* Estados */
+.table-slot.available {
+  background-color: #e6f4ea;       /* verdoso suave */
+  border-color: #4caf50;
+}
+
+.table-slot.reserved {
+  background-color: #fbe3e4;       /* rojito suave */
+  border-color: #e53935;
+  color: #555;
+  cursor: not-allowed;
+  opacity: 0.8;
+}
+
+.table-slot.selected {
+  background-color: #ffe6c7;       /* naranjita */
+  border-color: #ff9800;
+  transform: translateY(-3px);
+}
+
+/* Leyenda */
+.legend-box {
+  width: 18px;
+  height: 18px;
+  border-radius: 0.35rem;
+  display: inline-block;
+  border: 1px solid #444;
+}
+
+.legend-available {
+  background-color: #e6f4ea;
+}
+
+.legend-reserved {
+  background-color: #fbe3e4;
+}
+
+.legend-selected {
+  background-color: #ffe6c7;
+}
